@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <title>Email</title>
+
+    <style>
+        :root {
+            font-size: 16px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100vw;
+            /* height: 200px; */
+            /* background: blue; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images-wrapper {
+            padding: 5vh 0;
+        }
+
+        header img {
+            max-height: 60px;
+        }
+
+        header img+img {
+            margin-left: 30px;
+        }
+
+        .square-name {
+            width: 100%;
+            height: 6rem;
+            display: flex;
+            font-weight: 500;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg,
+                    #eb3636 0%,
+                    rgba(230, 71, 71, 0.84) 100%);
+            color: white;
+        }
+
+        main {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 6vh 4vh 2vh 4vh;
+            text-align: center;
+        }
+
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            padding: 0 3vw;
+        }
+
+        .payment-methods .payment-container {
+            width: 35rem;
+            height: 13rem;
+            max-width: 250px;
+            display: flex;
+            flex: 0 40%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: #F4F3F3;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 1.7rem 0.5rem;
+            position: relative;
+        }
+
+        .payment-methods .payment-container img {
+            max-height: 4rem;
+        }
+
+        .payment-container p {
+            color: #6E6D7A;
+            margin: 15px 0;
+        }
+
+        .payment-container a {
+            color: whitesmoke;
+            text-decoration: none;
+            background: #6E6D7A;
+            padding: 8px 20%;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 6%;
+        }
+
+        .stage-name {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.6vh 0;
+            color: white;
+            background: linear-gradient(180deg,
+                    #eb3636 0%,
+                    rgba(230, 71, 71, 0.84) 100%);
+        }
+
+        .stage-name span {
+            font-size: 1.2rem;
+        }
+
+        .stage-titles {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100vw;
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #6E6D7A;
+            margin: 20px 0;
+            padding: 20px 15px 5px 15px;
+            border-radius: 10px;
+        }
+
+        .title .numbers {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0;
+            flex-direction: column;
+        }
+
+        .title .numbers div {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .title .numbers p {
+            padding: 8px;
+            border: 1px solid #6E6D7A;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+
+        hr {
+            margin: 40px 0;
+            width: 80%;
+        }
+
+        #lottery-date {
+            color: #CD3D3D;
+            margin: 20px 0;
+        }
+
+        #lottery-date strong {
+            font-weight: 700;
+        }
+
+        footer {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 30px 60px 30px;
+        }
+
+        footer span {
+            color: #6E6D7A;
+        }
+
+        footer #google-play {
+            margin: 40px 0;
+        }
+
+        footer #google-play img {
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="images-wrapper">
+            <img src="./assets/pbcap.png" alt="Logo">
+        </div>
+        <div class="square-name">
+            <h2>PBCap Capitalização</h2>
+        </div>
+    </header>
+    <main>
+        <span style="color: #CD3D3D;margin-bottom: 25px;font-size: 1.2rem;">Oops sua compra não foi aprovada pela
+            operadora</span>
+        <h3 style="padding: 2vh 0 5vh 0; font-weight: 400;">
+            Tente usar outra forma de pagamento
+        </h3>
+        <div class="payment-methods">
+            <div class="payment-container">
+                <img src="./assets/caixa.svg" alt="Caixa">
+                <p>Cartão de débito virtual Caixa</p>
+                <a href="https://www.google.com">Escolher</a>
+            </div>
+            <div class="payment-container">
+                <img src="./assets/mercado-pago.svg" alt="Mercado Pago">
+                <p>Mercado Pago</p>
+                <a href="https://www.google.com">Escolher</a>
+            </div>
+            <div class="payment-container">
+                <img src="./assets/credit-card.svg" alt="Cartão de Crédito">
+                <p>Cartão de Crédito</p>
+                <a href="https://www.google.com">Escolher</a>
+            </div>
+            <div class="payment-container">
+                <img src="./assets/wallet.svg" alt="Saldo da Carteira">
+                <p>Saldo da Carteira</p>
+                <a href="https://www.google.com">Escolher</a>
+            </div>
+        </div>
+        <span style="padding: 2vh 0 5vh 0;">Seus títulos estão esperando por você!</span>
+        <div class="stage-name">
+            <span>Etapa Teste</span>
+        </div>
+
+        <div class="stage-titles">
+            <div class="title">
+                <p>Número da Sorte: 123456</p>
+                <div class="numbers">
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <p>Número da Sorte: 123456</p>
+                <div class="numbers">
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <p>Número da Sorte: 123456</p>
+                <div class="numbers">
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                    <div>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                        <p>12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span id="lottery-date">
+            O sorteio será realizado em:
+            <strong>02/02/2020 às 10:00</strong>
+        </span>
+        <hr>
+    </main>
+    <footer>
+        <span>
+            Você pode acompanhar o sorteio direto do nosso Aplicativo!
+        </span>
+        <a id="google-play" href="https://play.google.com/store">
+            <img src="./assets/logo_google_play.png" alt="Google Play">
+        </a>
+        <span>Copyright C 2020 PlayServicos.
+            All rights reserved.
+        </span>
+        <span>contato@playservicos.com.br</span>
+    </footer>
+</body>
+
+</html>
